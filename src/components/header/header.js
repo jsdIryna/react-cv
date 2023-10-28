@@ -1,6 +1,5 @@
-import './header.css';
-import '../../app.css';
-import logo from '../../assets/burger.png';
+import 'D:/projects/react-cv/src/components/header/header.scss';
+import logo from 'D:/projects/react-cv/src/assets/burger.png';
 
 function Header() {
     return (
