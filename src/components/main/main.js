@@ -1,10 +1,10 @@
 import 'D:/projects/react-cv/src/components/main/main.scss';
-import comp from 'D:/projects/react-cv/src/assets/computer.png';
+import MainTitle from 'D:/projects/react-cv/src/components/main/main-title/main-title.js';
 
 function Main() {
-    // return (
-
-    // )
+    return (
+        <MainTitle />
+    )
 }
 
 export default Main;
