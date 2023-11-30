@@ -1,6 +1,9 @@
 $header-color: #34547A;
 
 .header {
+    display: flex;
+    justify-content: center;
+
     .container {
         .header__row {
             display: flex;
@@ -14,6 +17,10 @@ $header-color: #34547A;
                     font-family: 'Revalia', cursive;
                     font-size: 48px;
                     text-transform: uppercase;
+
+                    @media (max-width: 425px) {
+                        font-size: 40px;
+                    }
                 }
             }
 
@@ -24,6 +31,10 @@ $header-color: #34547A;
                     width: 40px;
                     height: 40px;
                 }
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
             }
 
             .header__list {
@@ -32,6 +43,10 @@ $header-color: #34547A;
                 height: 100%;
                 align-items: center;
                 width: 343px;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
 
                 .list__item__main a {
                     font-weight: bold;
@@ -61,47 +76,35 @@ $header-color: #34547A;
                         }
                     }
                 }
-            }
 
-            #hover {
-                position: relative;
+                #hover {
+                    position: relative;
 
-                .sub-menu {
-                    position: absolute;
-                    display: none;
-                    padding: 15px 15px 9px 15px;
-                    top: 65px;
-                    background-color: #EEEFF1;
-                    height: 45px;
-                    font-size: 15px;
+                    .sub-menu {
+                        position: absolute;
+                        display: none;
+                        padding: 15px 15px 9px 15px;
+                        top: 65px;
+                        background-color: #EEEFF1;
+                        height: 45px;
+                        font-size: 15px;
 
-                    a {
-                        text-transform: none;
-                        color: #000;
-                        font-weight: bold;
+                        a {
+                            text-transform: none;
+                            color: #000;
+                            font-weight: bold;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
                     }
 
-                    &:hover ul {
+                    &:hover .sub-menu {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                     }
-                }
-            }
-
-            @media (max-width: 768px) {
-                .burger {
-                    display: block;
-                }
-
-                .header__list {
-                    display: none;
-                }
-            }
-
-            @media (max-width: 425px) {
-                .header__logo div {
-                    font-size: 40px;
                 }
             }
         }

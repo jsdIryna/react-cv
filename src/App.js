@@ -1,16 +1,32 @@
-import './app.scss';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from 'D:/projects/react-cv/src/components/header/header';
-import Main from 'D:/projects/react-cv/src/components/main/main';
-// import Footer from 'D:/projects/react-cv/src/components/footer';
+import AboutMe from 'containers/about-me/about';
+import WorksPage from 'containers/works/works';
+
+import Header from "components/header/header";
+// import Footer from 'components/footer/footer';
+
+import 'app.scss';
 
 function App() {
   return (
     <div className="wrapper">
-      <Header />
-      <Main />
+      <main>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="about-me" element={<AboutMe />} />
+            <Route path="works" element={<WorksPage />} />
+            <Route path="works/calculator" element={<>Calculator</>} />
+            <Route path="works/todo-list" element={<>To Do list</>} />
+
+            <Route path="*" element={<>404. No page defined</>} />
+          </Routes>
+        </BrowserRouter>
+      </main>
       {/* <Footer /> */}
-    </div>
+    </div >
   );
 }
 

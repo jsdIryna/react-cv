@@ -1,5 +1,5 @@
-import 'D:/projects/react-cv/src/components/main/main-title/main-title.scss';
-import comp from 'D:/projects/react-cv/src/assets/computer.png'
+import comp from 'assets/computer.png'
+import 'components/main-title/main-title.scss';
 
 function MainTitle() {
     return (

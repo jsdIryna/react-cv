@@ -1,5 +1,7 @@
-import 'D:/projects/react-cv/src/components/header/header.scss';
-import logo from 'D:/projects/react-cv/src/assets/burger.png';
+import { Link } from "react-router-dom";
+
+import logo from 'assets/burger.png';
+import 'components/header/header.scss';
 
 function Header() {
     return (
@@ -13,12 +15,12 @@ function Header() {
                         <img src={logo} alt="burger" />
                     </div>
                     <ul className="header__list">
-                        <li className="list__item__main"><a href="#">home</a></li>
-                        <li id="hover" className="list__item"><a href="#">works</a>
-                            <ul className="sub-menu">
-                                <li className="underline"><a href="calculator.html">Calculator</a></li>
-                                <li className="underline"><a href="">To do list</a></li>
-                            </ul>
+                        <li className="list__item__main"><Link to="about-me">home</Link></li>
+                        <li id="hover" className="list__item"><Link to="works">works</Link>
+                            {/* <ul className="sub-menu">
+                                <li className="underline"><Link to="works/calculator">Calculator</Link></li>
+                                <li className="underline"><Link to="works/todo-list">To do list</Link></li>
+                            </ul> */}
                         </li>
                         <li className="list__item"><a href="contacts.html">contacts</a></li>
                     </ul>
