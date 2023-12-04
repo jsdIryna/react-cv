@@ -1,9 +1,9 @@
-// function Calculator() {
-//     return (
-//         <>
-//             Calculator
-//         </>
-//     )
-// }
+function Calculator() {
+    return (
+        <>
+            Calculator
+        </>
+    )
+}
 
-// export default Calculator;
+export default Calculator;

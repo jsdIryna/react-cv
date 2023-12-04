@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import logo from 'assets/burger.png';
+
 import 'components/header/header.scss';
 
 function Header() {
@@ -17,10 +18,6 @@ function Header() {
                     <ul className="header__list">
                         <li className="list__item__main"><Link to="about-me">home</Link></li>
                         <li id="hover" className="list__item"><Link to="works">works</Link>
-                            {/* <ul className="sub-menu">
-                                <li className="underline"><Link to="works/calculator">Calculator</Link></li>
-                                <li className="underline"><Link to="works/todo-list">To do list</Link></li>
-                            </ul> */}
                         </li>
                         <li className="list__item"><a href="contacts.html">contacts</a></li>
                     </ul>

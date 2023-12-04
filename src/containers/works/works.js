@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "containers/works/works.scss"
 
+import "containers/works/works.scss"
 
 function WorksPage() {
     return (
@@ -12,4 +12,5 @@ function WorksPage() {
         </div>
     )
 }
+
 export default WorksPage;
