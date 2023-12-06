@@ -18,6 +18,7 @@ li {
 }
 
 ul {
+  padding: 0;
   margin: 0;
 }
 
@@ -36,21 +37,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     width: 1150px;
-  }
 
-  .header {
-    display: flex;
-    justify-content: center;
-  }
-
-  @media (max-width: 1200px) {
-    .container {
+    @media (max-width: 1200px) {
       width: 97vw;
     }
-  }
 
-  @media (max-width: 992px) {
-    .container {
+    @media (max-width: 992px) {
       width: 94vw;
     }
   }
