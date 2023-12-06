@@ -1,0 +1,112 @@
+$header-color: #34547A;
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        .header__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 110px;
+            color: $header-color;
+
+            .header__logo {
+                div {
+                    font-family: 'Revalia', cursive;
+                    font-size: 48px;
+                    text-transform: uppercase;
+
+                    @media (max-width: 425px) {
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .burger {
+                display: none;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+
+            .header__list {
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                align-items: center;
+                width: 343px;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
+                .list__item__main a {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: $header-color;
+                }
+
+                .list__item {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    a {
+                        text-transform: uppercase;
+                        color: $header-color;
+
+                        &:hover {
+                            text-shadow: 0.2px 0.2px 0.2px;
+                        }
+
+                        &:active {
+                            text-shadow: initial;
+                        }
+
+                        &.underline:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                #hover {
+                    position: relative;
+
+                    .sub-menu {
+                        position: absolute;
+                        display: none;
+                        padding: 15px 15px 9px 15px;
+                        top: 65px;
+                        background-color: #EEEFF1;
+                        height: 45px;
+                        font-size: 15px;
+
+                        a {
+                            text-transform: none;
+                            color: #000;
+                            font-weight: bold;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    &:hover .sub-menu {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}
