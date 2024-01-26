@@ -1,14 +1,18 @@
-.works {
+.projects {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 90px;
+    align-items: center;
+    padding-top: 90px;
+
+    @media (max-width: 425px) {
+        padding-top: 80px;
+    }
 
     .list_item {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         height: 50px;
 
         .item {
@@ -17,7 +21,7 @@
 
             >a {
                 text-decoration: underline;
-                color: #000;
+                color: #fff;
             }
         }
     }

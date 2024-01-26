@@ -1,0 +1,11 @@
+.to_do {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    color: #fff;
+    font-size: 20px;
+
+    @media (max-width: 425px) {
+        padding-top: 80px;
+    }
+}

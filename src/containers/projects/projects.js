@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import "containers/works/works.scss"
+import "containers/projects/projects.scss"
 
-function WorksPage() {
+function ProjectsPage() {
     return (
-        <div className="works">
+        <div className="projects">
             <ul className="list_item">
                 <li className="item"><Link to="calculator">Calculator</Link></li>
                 <li className="item"><Link to="todo-list">To do list</Link></li>
@@ -13,4 +13,4 @@ function WorksPage() {
     )
 }
 
-export default WorksPage;
+export default ProjectsPage;
