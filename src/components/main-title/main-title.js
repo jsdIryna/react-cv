@@ -1,26 +1,34 @@
-import comp from 'assets/computer.png'
-import 'components/main-title/main-title.scss';
+import myPhoto from "assets/main-icons/me.jpg";
+import "components/main-title/main-title.scss";
 
 function MainTitle() {
-    return (
-        <div className="main__title">
-            <div className="container">
-                <div className="main__title__row">
-                    <div className="title__img">
-                        <img src={comp} alt='computer' />
-                    </div>
-                    <div className="title__descr">
-                        <h1 className="descr__title">WEB-programming</h1>
-                        <div className="descr__body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aspernatur deleniti sed nisi libero iusto facere non similique expedita sequi,
-                            delectus nam ipsum, esse vitae provident!
-                        </div>
-                        <button className="descr__button">write me</button>
-                    </div>
-                </div>
+  return (
+    <div className="meet__me">
+      <div className="container">
+        <div className="meet__me__row">
+          <div className="introduction">
+            <div className="hello">Hello, I'm</div>
+            <div className="details">
+              <div className="name">Iryna Klonova</div>
+              <div className="dateils_text">
+                I'm an ambitious front-end developer striving to craft stunning
+                web experiences. I specialize in creating responsive and
+                pixel-perfect websites, driven by my enthusiasm and dedication
+                to every project
+              </div>
+              <div className="buttons">
+                <button className="projectsButton">Projects</button>
+                <button className="hire_me">Hire Me</button>
+              </div>
             </div>
+          </div>
+          <div className="personal_photo">
+            <img src={myPhoto} alt="My Photo" />
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default MainTitle;

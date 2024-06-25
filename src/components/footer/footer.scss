@@ -1,0 +1,130 @@
+$header-color: #fff;
+$hover-color: rgb(210, 191, 214);
+
+.footer {
+  display: flex;
+  background: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
+
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .footer__row__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px;
+      padding: 0 40px;
+      color: $header-color;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+
+      @media (max-width: 425px) {
+        padding: 0 30px;
+        height: 140px;
+      }
+
+      .footer__logo {
+        display: flex;
+        padding-bottom: 10px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        div {
+          font-family: "Darker Grotesque", sans-serif;
+          font-size: 38px;
+          font-weight: 700;
+
+          @media (max-width: 425px) {
+            font-size: 33px;
+          }
+        }
+
+        .first__letter {
+          color: #090411;
+        }
+      }
+
+      .footer__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 343px;
+
+        .list__item {
+          display: flex;
+          align-items: center;
+          height: 100%;
+
+          a {
+            text-transform: capitalize;
+            color: $header-color;
+
+            &:hover {
+              text-shadow: 0.2px 0.2px 0.2px;
+              color: $hover-color;
+            }
+
+            &:active {
+              text-shadow: initial;
+            }
+
+            &.underline:hover {
+              text-decoration: underline;
+            }
+          }
+
+          &.get {
+            font-size: 14px;
+          }
+        }
+
+        .list__item__main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          border: 2px solid #fff;
+          border-radius: 5px;
+
+          a {
+            display: flex;
+            align-items: center;
+            height: 25px;
+            padding: 1px 30px;
+            text-transform: capitalize;
+            color: $header-color;
+
+            @media (max-width: 425px) {
+              padding: 1px 5px;
+            }
+
+            &:hover {
+              text-shadow: 0.2px 0.2px 0.2px;
+              color: $hover-color;
+            }
+          }
+        }
+      }
+    }
+
+    .horizontal__line {
+      border: none;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #fff;
+    }
+
+    .copyright {
+      margin: 10px auto 0;
+      padding-bottom: 10px;
+      font-size: 14px;
+      color: #ffffff9b;
+    }
+  }
+}

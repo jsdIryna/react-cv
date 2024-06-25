@@ -1,109 +1,173 @@
-.main__title {
-    display: flex;
-    justify-content: center;
-    height: 686px;
+$background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
 
-    @media (max-width: 1200px) {
-        height: 655px;
+.meet__me {
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+
+  @media (max-width: 768px) {
+    padding-top: 150px;
+  }
+
+  @media (max-width: 425px) {
+    padding-top: 130px;
+  }
+
+  .meet__me__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+
+    @media (max-width: 1077px) {
+      padding: 0 90px;
     }
 
     @media (max-width: 992px) {
-        height: 57vh;
+      padding: 0 70px;
     }
 
     @media (max-width: 768px) {
-        height: 578px;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 25px;
     }
 
-    .main__title__row {
-        display: flex;
-        justify-content: space-between;
+    .introduction {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 395px;
+      color: #fff;
 
-        .title__img {
+      .hello {
+        font-size: 40px;
+        font-weight: 500;
+
+        @media (max-width: 992px) {
+          font-size: 30px;
+        }
+      }
+
+      .details {
+        padding-top: 12px;
+
+        .name {
+          font-size: 73px;
+          font-weight: bold;
+          background: $background-gradient;
+          color: transparent;
+          background-clip: text;
+
+          @media (max-width: 1077px) {
+            font-size: 58px;
+          }
+
+          @media (max-width: 992px) {
+            font-size: 45px;
+          }
+
+          @media (max-width: 768px) {
             display: flex;
-            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+          }
 
-            img {
-                @media (max-width: 992px) {
-                    width: 302px;
-                }
-            }
+          @media (max-width: 425px) {
+            font-size: 30px;
+          }
         }
 
-        .title__descr {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 297px;
-            width: 592px;
+        .dateils_text {
+          font-size: 20px;
+          padding-top: 20px;
 
-            @media (max-width: 1200px) {
-                width: 566px;
-            }
+          @media (max-width: 992px) {
+            padding-top: 0px;
+          }
+
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          padding: 32px 0;
+          font-size: 16px;
+
+          button {
+            width: 170px;
+            height: 45px;
+            border-radius: 2px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
 
             @media (max-width: 992px) {
-                max-width: 50vw;
-                height: 245px;
+              width: 107px;
             }
 
             @media (max-width: 768px) {
-                max-width: 90vw;
-                align-items: center;
-                height: 234px;
+              margin-left: 0px;
+              margin-top: 10px;
+              width: 50vw;
+              height: 38px;
             }
+          }
 
-            .descr__title {
-                display: flex;
-                align-items: center;
-                height: 45px;
-                font-size: 48px;
-                font-weight: 500;
+          .projectsButton {
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid rgb(152 71 255);
+          }
 
-                @media (max-width: 992px) {
-                    font-size: 31px;
-                }
+          .hire_me {
+            margin-left: 32px;
+            background: $background-gradient;
+
+            @media (max-width: 768px) {
+              margin-left: 0px;
+              margin-top: 10px;
             }
+          }
 
-            .descr__body {
-                font-size: 16px;
-                color: #727272;
-                line-height: 26px;
+          @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 0;
+          }
+        }
+      }
 
-                @media (max-width: 992px) {
-                    font-size: 14px;
-                }
+      @media (max-width: 992px) {
+        width: 31vw;
+      }
 
-                @media (max-width: 768px) {
-                    text-align: center;
-                }
-            }
+      @media (max-width: 768px) {
+        align-items: center;
+        width: 76vw;
+      }
+    }
 
-            .descr__button {
-                width: 225px;
-                height: 65px;
-                background: #34547A;
-                font-size: 16px;
-                text-align: center;
-                text-transform: uppercase;
-                color: #fff;
-                border: none;
+    .personal_photo {
+      display: flex;
+      align-items: center;
 
-                @media (max-width: 992px) {
-                    width: 28vw;
-                    font-size: 13px;
-                    height: 55px;
-                }
+      img {
+        height: auto;
+        width: 30vw;
+        margin-left: 20px;
+        overflow: hidden;
 
-                @media (max-width: 768px) {
-                    width: 32vw;
-                }
-            }
+        @media (max-width: 992px) {
+          width: 31vw;
         }
 
         @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            height: 466px;
+          width: 50vw;
+          margin-left: 0px;
         }
+      }
     }
+  }
 }

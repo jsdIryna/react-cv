@@ -1,0 +1,124 @@
+$background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
+$static-margin: 16px 0 0 0;
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 160px 0;
+
+  .contact__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+
+    @media (max-width: 1077px) {
+      padding: 0 90px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0 70px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .get__in__touch {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+
+      .contact__title {
+        font-size: 50px;
+        font-weight: bold;
+        background: $background-gradient;
+        color: transparent;
+        background-clip: text;
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
+      }
+
+      .title__descr {
+        font-size: 22.5px;
+        margin: $static-margin;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+
+      .networks__logo {
+        display: flex;
+        margin: $static-margin;
+
+        img {
+          &:not(:first-child) {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        align-items: center;
+      }
+    }
+
+    .input__forms {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 32px;
+      width: 43vw;
+
+      .input__name {
+        padding: 20px 19px;
+        border-radius: 5px;
+        background: #24202b;
+
+        &::placeholder {
+          color: #ffffffa4;
+        }
+
+        &.mail {
+          margin: $static-margin;
+        }
+
+        &.mes {
+          margin: $static-margin;
+          height: 245px;
+        }
+
+        &:focus {
+          border: 2px solid white;
+          outline: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        margin: 30px 0 0 0;
+        width: 60vw;
+      }
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+      background: $background-gradient;
+      color: #fff;
+      margin-top: 16px;
+      margin-left: auto;
+
+      @media (max-width: 768px) {
+        margin: 16px auto 0;
+        width: 150px;
+        height: 40px;
+      }
+    }
+  }
+}
