@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Document, Page } from "react-pdf";
 import burgerLogo from "assets/header-icons/burger.png";
 import crossLogo from "assets/header-icons/cross.png";
 import "components/header/header.scss";
@@ -58,7 +59,7 @@ function Header() {
           </li>
           <li className="list__item__main">
             <a
-              href="/CV-IRYNA-KLONOVA-FULL.pdf"
+              href="./public/CV-IRYNA-KLONOVA-FULL.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
