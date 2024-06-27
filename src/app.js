@@ -16,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<AboutMe />} />
+          <Route path="react-cv" element={<AboutMe />} />
           <Route path="about-me" element={<AboutMe />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="projects/calculator" element={<Calculator />} />
