@@ -3,7 +3,6 @@ import "containers/projects/game/game.scss";
 
 const Game = () => {
   useEffect(() => {
-    // Ваш JavaScript-код для игры
     const startButton = document.getElementById("start");
     const game = document.getElementById("game");
     const timeHeader = document.getElementById("time-header");
@@ -118,21 +117,21 @@ const Game = () => {
       <div className="app">
         <div className="app__header">
           <h1 id="time-header">
-            Время игры: <span id="time">5.0</span>
+            Game time: <span id="time">5.0</span>
           </h1>
           <h1 id="result-header" className="hide">
-            Ваш результат: <span id="result"></span>
+            Your result: <span id="result"></span>
           </h1>
         </div>
         <div className="app__content">
           <button className="btn" id="start">
-            Начать
+            Start
           </button>
           <div className="game" id="game"></div>
         </div>
         <div className="app__footer">
           <div className="input">
-            <label htmlFor="game-time">Время игры, (сек)</label>
+            <label htmlFor="game-time">Game time, (sec)</label>
             <input
               type="number"
               id="game-time"

@@ -1,20 +1,20 @@
 import { useRef, useState } from "react";
-import uniqid from "uniqid"; // библиотека для генерации уникальных идентификаторов в JavaScript
+import uniqid from "uniqid";
 import moment from "moment";
 
 import { Wrapper } from "components/wrapper/wrapper";
-import { Card } from "containers/projects/to-do-list/card/card"; // импорт компонента Card
+import { Card } from "containers/projects/to-do-list/card/card";
 
 import add from "assets/main-icons/add.png";
 
 const TodoList = () => {
-  const [data, setData] = useState([]); // состояние для хранения задач
-  const inputRef = useRef(null); // ссылка на input
+  const [data, setData] = useState([]);
+  const inputRef = useRef(null);
 
   const addCard = () => {
-    const taskName = inputRef.current.value.trim(); // убираем пробелы по краям строки
+    const taskName = inputRef.current.value.trim();
     if (taskName === "") {
-      return; // если строка пустая, не добавляем задачу
+      return;
     }
 
     const currentDate = moment();
@@ -22,12 +22,12 @@ const TodoList = () => {
 
     const newTask = {
       date: dateTime,
-      taskName: inputRef.current.value, // текст задачи
-      isChecked: false, // изначально задача не выполнена
+      taskName: inputRef.current.value,
+      isChecked: false,
     };
 
-    setData([...data, newTask]); // добавляем новый объект в массив data
-    inputRef.current.value = ""; // очищаем значение input
+    setData([...data, newTask]);
+    inputRef.current.value = "";
   };
 
   const handleCheckboxChange = (name) => {

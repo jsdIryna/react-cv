@@ -22,7 +22,6 @@ const Calculator = () => {
       sign = "";
       finish = false;
       out.textContent = 0;
-      console.log("all clear");
     };
 
     document.getElementById("ac").onclick = clearAll;
@@ -37,7 +36,6 @@ const Calculator = () => {
         if (b === "" && sign === "") {
           if (a.length === 6) return;
           a += key;
-          console.log(a, b, sign);
           out.textContent = a;
         } else if (a !== "" && sign !== "" && finish) {
           b = key;
@@ -48,14 +46,12 @@ const Calculator = () => {
           b += key;
           out.textContent = b;
         }
-        console.log(a, b, sign);
         return;
       }
 
       if (action.includes(key)) {
         sign = key;
         out.textContent = sign;
-        console.log(a, b, sign);
         if (key === "%") {
           if (b === "") {
             a = a / 100;
@@ -64,8 +60,6 @@ const Calculator = () => {
             b = (a * b) / 100;
             out.textContent = b;
           }
-
-          console.log(a, b, sign);
         }
         if (key === "+/-") {
           if (b === "") {
@@ -75,7 +69,6 @@ const Calculator = () => {
             b = parseFloat(b) * -1;
             out.textContent = b;
           }
-          console.log(a, b, sign);
         }
         return;
       }
@@ -105,7 +98,6 @@ const Calculator = () => {
         }
         finish = true;
         out.textContent = a;
-        console.log(a, b, sign);
       }
     };
   }, []);
