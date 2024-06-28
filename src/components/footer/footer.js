@@ -63,7 +63,7 @@ function Footer() {
             <div className="footer__column">
               <li className="list__item__main">
                 <a
-                  href="/CV-IRYNA-KLONOVA-FULL.pdf"
+                  href={`${process.env.PUBLIC_URL}/CV-IRYNA-KLONOVA-FULL.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

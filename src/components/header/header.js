@@ -58,7 +58,7 @@ function Header() {
           </li>
           <li className="list__item__main">
             <a
-              href="./public/CV-IRYNA-KLONOVA-FULL.pdf"
+              href={`${process.env.PUBLIC_URL}/CV-IRYNA-KLONOVA-FULL.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
