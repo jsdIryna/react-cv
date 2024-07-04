@@ -23,7 +23,7 @@ function MainTitle() {
                 to every project
               </div>
               <div className="buttons">
-                <Link to="projects" className="projectsButton">
+                <Link to="about-me/projects" className="projectsButton">
                   Projects
                 </Link>
 
