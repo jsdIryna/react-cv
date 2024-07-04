@@ -12,12 +12,11 @@ import Footer from "components/footer/footer";
 function App() {
   return (
     <main>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-cv">
         <Header />
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="react-cv" element={<AboutMe />} />
-          <Route path="react-cv/projects" element={<ProjectsPage />} />
           <Route path="about-me" element={<AboutMe />} />
           <Route path="about-me/projects" element={<ProjectsPage />} />
           <Route path="projects" element={<ProjectsPage />} />

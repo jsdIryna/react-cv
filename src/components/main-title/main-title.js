@@ -23,10 +23,9 @@ function MainTitle() {
                 to every project
               </div>
               <div className="buttons">
-                <Link to="react-cv/projects" className="projectsButton">
+                <Link to="/projects" className="projectsButton">
                   Projects
                 </Link>
-
                 <button className="hire_me" onClick={handleHireMeClick}>
                   Hire Me
                 </button>
