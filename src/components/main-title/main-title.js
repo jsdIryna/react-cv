@@ -23,7 +23,7 @@ function MainTitle() {
                 to every project
               </div>
               <div className="buttons">
-                <Link to="about-me/projects" className="projectsButton">
+                <Link to="react-cv/projects" className="projectsButton">
                   Projects
                 </Link>
 
