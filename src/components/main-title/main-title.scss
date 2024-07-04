@@ -77,7 +77,7 @@ $background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
           }
         }
 
-        .dateils_text {
+        .datails_text {
           font-size: 20px;
           padding-top: 20px;
 
@@ -116,13 +116,39 @@ $background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
           }
 
           .projectsButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 45px;
+            font-weight: bold;
             background-color: rgba(255, 255, 255, 0);
             border: 1px solid rgb(152 71 255);
+
+            &:active {
+              background-color: rgba(152, 71, 255, 0.1);
+              transform: scale(0.95);
+            }
+
+            @media (max-width: 992px) {
+              width: 107px;
+            }
+
+            @media (max-width: 768px) {
+              margin-left: 0px;
+              width: 50vw;
+              height: 38px;
+            }
           }
 
           .hire_me {
             margin-left: 32px;
             background: $background-gradient;
+
+            &:active {
+              background: linear-gradient(to right, #8741e4, rgb(172, 4, 212));
+              transform: scale(0.95);
+            }
 
             @media (max-width: 768px) {
               margin-left: 0px;
