@@ -15,18 +15,18 @@ function MainTitle() {
           <div className="introduction">
             <div className="hello">Hello, I'm</div>
             <div className="details">
-              <div className="name">Iryna Klonova</div>
-              <div className="datails_text">
+              <div className="details__name">Iryna Klonova</div>
+              <div className="datails__text">
                 I'm an ambitious front-end developer striving to craft stunning
                 web experiences. I specialize in creating responsive and
                 pixel-perfect websites, driven by my enthusiasm and dedication
                 to every project
               </div>
-              <div className="buttons">
+              <div className="details__buttons">
                 <Link to="/projects" className="projectsButton">
                   Projects
                 </Link>
-                <button className="hire_me" onClick={handleHireMeClick}>
+                <button className="hire-me" onClick={handleHireMeClick}>
                   Hire Me
                 </button>
               </div>

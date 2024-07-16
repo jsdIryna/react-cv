@@ -3,9 +3,7 @@ import deleteIcon from "assets/main-icons/delete.png";
 export const Card = ({ isChecked, date, name, deleteCard, onChange }) => {
   const borderColor = isChecked ? "border-lime-300" : "border-violet-400";
 
-  console.log(isChecked);
   return (
-    // цвет будет зависить от Checked
     <div
       className={`flex justify-between min-h-14 my-0.5 font-sans shadow-md border-l-8 ${borderColor}`}
     >
@@ -24,8 +22,7 @@ export const Card = ({ isChecked, date, name, deleteCard, onChange }) => {
           checked={isChecked}
           onChange={() => onChange(name)}
         />
-        <button className="" onClick={() => deleteCard(name)}>
-          {/* delete */}
+        <button onClick={() => deleteCard(name)}>
           <img src={deleteIcon} alt="delete" className="w-3.5 h-3.5" />
         </button>
       </div>

@@ -30,19 +30,16 @@ $hover-color: rgb(210, 191, 214);
       .footer__logo {
         display: flex;
         padding-bottom: 10px;
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 38px;
+        font-weight: 700;
 
         @media (max-width: 768px) {
           display: none;
         }
 
-        div {
-          font-family: "Darker Grotesque", sans-serif;
-          font-size: 38px;
-          font-weight: 700;
-
-          @media (max-width: 425px) {
-            font-size: 33px;
-          }
+        @media (max-width: 425px) {
+          font-size: 33px;
         }
 
         .first__letter {
