@@ -1,0 +1,18 @@
+.tooltip_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: fit-content;
+  height: 30px;
+
+  .tooltip_text {
+    padding: 0px 7px;
+  }
+}
