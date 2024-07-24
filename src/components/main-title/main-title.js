@@ -16,7 +16,7 @@ function MainTitle() {
             <div className="hello">Hello, I'm</div>
             <div className="details">
               <div className="details__name">Iryna Klonova</div>
-              <div className="datails__text">
+              <div className="details__text">
                 I'm an ambitious front-end developer striving to craft stunning
                 web experiences. I specialize in creating responsive and
                 pixel-perfect websites, driven by my enthusiasm and dedication
