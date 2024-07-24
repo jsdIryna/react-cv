@@ -122,6 +122,10 @@ $hover-color: rgb(210, 191, 214);
       padding-bottom: 10px;
       font-size: 14px;
       color: #ffffff9b;
+
+      @media (max-width: 425px) {
+        font-size: 11px;
+      }
     }
   }
 }

@@ -36,7 +36,7 @@ $background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 395px;
+      width: 39vw;
       color: #fff;
 
       .hello {
@@ -92,7 +92,7 @@ $background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
 
         &__buttons {
           display: flex;
-          padding: 32px 0;
+          padding: 32px 0px 0px 0px;
           font-size: 16px;
 
           button {
@@ -185,7 +185,7 @@ $background-gradient: linear-gradient(to right, #9847ff, rgb(192, 5, 238));
         margin-left: 20px;
         overflow: hidden;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
           width: 31vw;
         }
 
