@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-cv/static/css/main.436c043e.css",
-    "main.js": "/react-cv/static/js/main.3024d2d4.js",
+    "main.css": "/react-cv/static/css/main.6c51a273.css",
+    "main.js": "/react-cv/static/js/main.0d5d0223.js",
     "static/js/787.11baedba.chunk.js": "/react-cv/static/js/787.11baedba.chunk.js",
     "static/media/css.svg": "/react-cv/static/media/css.ff005b4d9549356780baef5952c2c493.svg",
     "static/media/react.svg": "/react-cv/static/media/react.e636cc3aa1c5bc1c821ff867220eb670.svg",
     "static/media/js.svg": "/react-cv/static/media/js.fe05cdf4f725498f30740698609c2b93.svg",
     "static/media/teilwind.svg": "/react-cv/static/media/teilwind.52ed346f25b3b20ff21ae352ce63f2ce.svg",
     "static/media/calculatorPage.png": "/react-cv/static/media/calculatorPage.782de2447360da20bc96.png",
-    "static/media/me.jpg": "/react-cv/static/media/me.1efa2c2587959ab77c5a.jpg",
+    "static/media/me.jpg": "/react-cv/static/media/me.bf1479e890da810d58fc.jpg",
     "static/media/calculator.png": "/react-cv/static/media/calculator.54ff592e1dcce062deaa.png",
     "static/media/todoPage.png": "/react-cv/static/media/todoPage.91bfc8e0935d97370c32.png",
     "static/media/add.png": "/react-cv/static/media/add.57f65b59a3d32e4547cd.png",
@@ -16,12 +16,12 @@
     "static/media/delete.png": "/react-cv/static/media/delete.6abcf5067b21e3b534a9.png",
     "static/media/html.svg": "/react-cv/static/media/html.453d0ac53363bee305a76eec83b9dfee.svg",
     "index.html": "/react-cv/index.html",
-    "main.436c043e.css.map": "/react-cv/static/css/main.436c043e.css.map",
-    "main.3024d2d4.js.map": "/react-cv/static/js/main.3024d2d4.js.map",
+    "main.6c51a273.css.map": "/react-cv/static/css/main.6c51a273.css.map",
+    "main.0d5d0223.js.map": "/react-cv/static/js/main.0d5d0223.js.map",
     "787.11baedba.chunk.js.map": "/react-cv/static/js/787.11baedba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.436c043e.css",
-    "static/js/main.3024d2d4.js"
+    "static/css/main.6c51a273.css",
+    "static/js/main.0d5d0223.js"
   ]
 }
