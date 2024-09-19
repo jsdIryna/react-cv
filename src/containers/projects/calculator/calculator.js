@@ -4,10 +4,10 @@ import Calc from "assets/main-icons/calculator.png";
 import "containers/projects/calculator/calculator.scss";
 
 const Calculator = () => {
-  const [currentNumber, setCurrentNumber] = useState(""); // текущее вводимое число
-  const [previousNumber, setPreviousNumber] = useState(null); // предыдущее число для вычислений
-  const [operator, setOperator] = useState(null); // текущий оператор для вычислений
-  const [output, setOutput] = useState("0"); // текущее значение для отображения на экране
+  const [currentNumber, setCurrentNumber] = useState("");
+  const [previousNumber, setPreviousNumber] = useState(null);
+  const [operator, setOperator] = useState(null);
+  const [output, setOutput] = useState("0");
 
   const digit = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
   const action = ["-", "+", "X", "/", "%", "+/-"];
@@ -52,7 +52,7 @@ const Calculator = () => {
         const newNumber = currentNumber + key;
         setCurrentNumber(newNumber);
         setOutput(newNumber);
-        updateFontSize(newNumber); // Обновляем шрифт при вводе цифры
+        updateFontSize(newNumber);
       }
     } else if (action.includes(key)) {
       if (currentNumber) {
@@ -64,7 +64,7 @@ const Calculator = () => {
           );
           setPreviousNumber(result);
           setOutput(result);
-          updateFontSize(result.toString()); // Обновляем шрифт после вычислений
+          updateFontSize(result.toString());
         } else {
           setPreviousNumber(parseFloat(currentNumber));
         }
@@ -95,7 +95,7 @@ const Calculator = () => {
         setCurrentNumber(result.toString());
         setPreviousNumber(null);
         setOperator(null);
-        updateFontSize(result.toString()); // Обновляем шрифт после нажатия "="
+        updateFontSize(result.toString());
       }
     }
   };
