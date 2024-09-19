@@ -132,6 +132,14 @@ h1 {
                     width: 158px;
                     font-size: 38px;
                   }
+
+                  &.small-font {
+                    font-size: 34px; // Уменьшенный размер шрифта
+                  }
+
+                  &.smaller-font {
+                    font-size: 30px; // Еще меньший размер шрифта
+                  }
                 }
               }
 
