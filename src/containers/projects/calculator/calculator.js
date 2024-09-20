@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Wrapper } from "components/wrapper/wrapper";
 import Calc from "assets/main-icons/calculator.png";
 import "containers/projects/calculator/calculator.scss";
+
+const digit = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
+const action = ["-", "+", "X", "/", "%", "+/-"];
 
 const Calculator = () => {
   const [currentNumber, setCurrentNumber] = useState("");
@@ -9,16 +12,13 @@ const Calculator = () => {
   const [operator, setOperator] = useState(null);
   const [output, setOutput] = useState("0");
 
-  const digit = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
-  const action = ["-", "+", "X", "/", "%", "+/-"];
-
-  const clearAll = () => {
+  const clearAll = useCallback(() => {
     setCurrentNumber("");
     setPreviousNumber(null);
     setOperator(null);
     setOutput("0");
     updateFontSize("0");
-  };
+  }, []);
 
   const calculate = (a, b, operator) => {
     switch (operator) {
@@ -46,62 +46,65 @@ const Calculator = () => {
     }
   };
 
-  const handleButtonClick = (key) => {
-    if (digit.includes(key)) {
-      if (currentNumber.length < 9) {
-        const newNumber = currentNumber + key;
-        setCurrentNumber(newNumber);
-        setOutput(newNumber);
-        updateFontSize(newNumber);
-      }
-    } else if (action.includes(key)) {
-      if (currentNumber) {
-        if (previousNumber !== null) {
+  const handleButtonClick = useCallback(
+    (key) => {
+      if (digit.includes(key)) {
+        if (currentNumber.length < 9) {
+          const newNumber = currentNumber + key;
+          setCurrentNumber(newNumber);
+          setOutput(newNumber);
+          updateFontSize(newNumber);
+        }
+      } else if (action.includes(key)) {
+        if (currentNumber) {
+          if (previousNumber !== null) {
+            const result = calculate(
+              parseFloat(previousNumber),
+              parseFloat(currentNumber),
+              operator
+            );
+            setPreviousNumber(result);
+            setOutput(result);
+            updateFontSize(result.toString());
+          } else {
+            setPreviousNumber(parseFloat(currentNumber));
+          }
+          setCurrentNumber("");
+          setOperator(key);
+        }
+        if (key === "%") {
+          const number = parseFloat(currentNumber) || 0;
+          const result = number / 100;
+          const limitedResult = result.toString().slice(0, 9);
+          setOutput(limitedResult);
+          setCurrentNumber(limitedResult);
+          updateFontSize(limitedResult);
+          setPreviousNumber(null);
+          setOperator(null);
+        } else if (key === "+/-") {
+          const number = parseFloat(currentNumber) || 0;
+          const result = number * -1;
+          setOutput(result);
+          setCurrentNumber(result.toString());
+          updateFontSize(result.toString());
+        }
+      } else if (key === "=") {
+        if (currentNumber && operator && previousNumber !== null) {
           const result = calculate(
             parseFloat(previousNumber),
             parseFloat(currentNumber),
             operator
           );
-          setPreviousNumber(result);
-          setOutput(result);
+          setOutput(result.toString().slice(0, 9));
+          setCurrentNumber(result.toString());
+          setPreviousNumber(null);
+          setOperator(null);
           updateFontSize(result.toString());
-        } else {
-          setPreviousNumber(parseFloat(currentNumber));
         }
-        setCurrentNumber("");
-        setOperator(key);
       }
-      if (key === "%") {
-        const number = parseFloat(currentNumber) || 0;
-        const result = number / 100;
-        const limitedResult = result.toString().slice(0, 9);
-        setOutput(limitedResult);
-        setCurrentNumber(limitedResult);
-        updateFontSize(limitedResult);
-        setPreviousNumber(null);
-        setOperator(null);
-      } else if (key === "+/-") {
-        const number = parseFloat(currentNumber) || 0;
-        const result = number * -1;
-        setOutput(result);
-        setCurrentNumber(result.toString());
-        updateFontSize(result.toString());
-      }
-    } else if (key === "=") {
-      if (currentNumber && operator && previousNumber !== null) {
-        const result = calculate(
-          parseFloat(previousNumber),
-          parseFloat(currentNumber),
-          operator
-        );
-        setOutput(result.toString().slice(0, 9));
-        setCurrentNumber(result.toString());
-        setPreviousNumber(null);
-        setOperator(null);
-        updateFontSize(result.toString());
-      }
-    }
-  };
+    },
+    [currentNumber, previousNumber, operator]
+  );
 
   useEffect(() => {
     document.getElementById("ac").onclick = clearAll;
@@ -111,7 +114,7 @@ const Calculator = () => {
       const key = event.target.textContent;
       handleButtonClick(key);
     };
-  }, [currentNumber, previousNumber, operator]);
+  }, [clearAll, handleButtonClick]);
 
   return (
     <Wrapper>
