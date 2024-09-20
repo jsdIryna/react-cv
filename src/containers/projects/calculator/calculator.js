@@ -58,9 +58,9 @@ const Calculator = () => {
       if (currentNumber) {
         if (previousNumber !== null) {
           const result = calculate(
-              parseFloat(previousNumber),
-              parseFloat(currentNumber),
-              operator
+            parseFloat(previousNumber),
+            parseFloat(currentNumber),
+            operator
           );
           setPreviousNumber(result);
           setOutput(result);
@@ -74,9 +74,12 @@ const Calculator = () => {
       if (key === "%") {
         const number = parseFloat(currentNumber) || 0;
         const result = number / 100;
-        setOutput(result);
-        setCurrentNumber(result.toString());
-        updateFontSize(result.toString());
+        const limitedResult = result.toString().slice(0, 9);
+        setOutput(limitedResult);
+        setCurrentNumber(limitedResult);
+        updateFontSize(limitedResult);
+        setPreviousNumber(null);
+        setOperator(null);
       } else if (key === "+/-") {
         const number = parseFloat(currentNumber) || 0;
         const result = number * -1;
@@ -87,9 +90,9 @@ const Calculator = () => {
     } else if (key === "=") {
       if (currentNumber && operator && previousNumber !== null) {
         const result = calculate(
-            parseFloat(previousNumber),
-            parseFloat(currentNumber),
-            operator
+          parseFloat(previousNumber),
+          parseFloat(currentNumber),
+          operator
         );
         setOutput(result.toString().slice(0, 9));
         setCurrentNumber(result.toString());
@@ -111,62 +114,61 @@ const Calculator = () => {
   }, [currentNumber, previousNumber, operator]);
 
   return (
-      <Wrapper>
-        <div className="wrapper">
-          <main>
-            <div className="calc">
-              <div className="container calc">
-                <div className="calc_row">
-                  <div className="calc__content">
-                    <div className="phone_with_calc">
-                      <img src={Calc} alt="Calculator" />
-                      <div className="absolute_block">
-                        <div className="calc_screen">
-                          <p id="screen">{output}</p>
-                        </div>
-                        <div className="buttons">
-                          <button id="ac" className="btn ac bg-grey">
-                            ac
-                          </button>
-                          <button className="btn plus-minus bg-grey">+/-</button>
-                          <button className="btn percent bg-grey">%</button>
-                          <button className="btn division bg-orange">/</button>
-                          <button className="btn seven">7</button>
-                          <button className="btn eigth">8</button>
-                          <button className="btn nine">9</button>
-                          <button className="btn myltiply bg-orange">X</button>
-                          <button className="btn four">4</button>
-                          <button className="btn five">5</button>
-                          <button className="btn six">6</button>
-                          <button className="btn minus bg-orange">-</button>
-                          <button className="btn one">1</button>
-                          <button className="btn two">2</button>
-                          <button className="btn three">3</button>
-                          <button className="btn plus bg-orange">+</button>
-                          <button className="btn zero">0</button>
-                          <button className="btn dot">.</button>
-                          <button className="btn equal bg-orange">=</button>
-                        </div>
+    <Wrapper>
+      <div className="wrapper">
+        <main>
+          <div className="calc">
+            <div className="container calc">
+              <div className="calc_row">
+                <div className="calc__content">
+                  <div className="phone_with_calc">
+                    <img src={Calc} alt="Calculator" />
+                    <div className="absolute_block">
+                      <div className="calc_screen">
+                        <p id="screen">{output}</p>
+                      </div>
+                      <div className="buttons">
+                        <button id="ac" className="btn ac bg-grey">
+                          ac
+                        </button>
+                        <button className="btn plus-minus bg-grey">+/-</button>
+                        <button className="btn percent bg-grey">%</button>
+                        <button className="btn division bg-orange">/</button>
+                        <button className="btn seven">7</button>
+                        <button className="btn eigth">8</button>
+                        <button className="btn nine">9</button>
+                        <button className="btn myltiply bg-orange">X</button>
+                        <button className="btn four">4</button>
+                        <button className="btn five">5</button>
+                        <button className="btn six">6</button>
+                        <button className="btn minus bg-orange">-</button>
+                        <button className="btn one">1</button>
+                        <button className="btn two">2</button>
+                        <button className="btn three">3</button>
+                        <button className="btn plus bg-orange">+</button>
+                        <button className="btn zero">0</button>
+                        <button className="btn dot">.</button>
+                        <button className="btn equal bg-orange">=</button>
                       </div>
                     </div>
-                    <div className="calc_descr">
-                      <div className="descr_text">
-                        <div className="go_count">Let's count?</div>
-                        <div className="calc_for_you">
-                          Calculator at your service :)
-                        </div>
+                  </div>
+                  <div className="calc_descr">
+                    <div className="descr_text">
+                      <div className="go_count">Let's count?</div>
+                      <div className="calc_for_you">
+                        Calculator at your service :)
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </main>
-          <hr className="horizontal_line"></hr>
-        </div>
-      </Wrapper>
+          </div>
+        </main>
+        <hr className="horizontal_line"></hr>
+      </div>
+    </Wrapper>
   );
 };
 
 export default Calculator;
-
