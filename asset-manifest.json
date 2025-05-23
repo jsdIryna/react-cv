@@ -1,12 +1,8 @@
 {
   "files": {
     "main.css": "/react-cv/static/css/main.2561722a.css",
-    "main.js": "/react-cv/static/js/main.7d726ff2.js",
+    "main.js": "/react-cv/static/js/main.fa9d40b2.js",
     "static/js/787.11baedba.chunk.js": "/react-cv/static/js/787.11baedba.chunk.js",
-    "static/media/css.svg": "/react-cv/static/media/css.ff005b4d9549356780baef5952c2c493.svg",
-    "static/media/react.svg": "/react-cv/static/media/react.e636cc3aa1c5bc1c821ff867220eb670.svg",
-    "static/media/js.svg": "/react-cv/static/media/js.fe05cdf4f725498f30740698609c2b93.svg",
-    "static/media/teilwind.svg": "/react-cv/static/media/teilwind.52ed346f25b3b20ff21ae352ce63f2ce.svg",
     "static/media/calculatorPage.png": "/react-cv/static/media/calculatorPage.782de2447360da20bc96.png",
     "static/media/me.jpg": "/react-cv/static/media/me.bf1479e890da810d58fc.jpg",
     "static/media/calculator.png": "/react-cv/static/media/calculator.54ff592e1dcce062deaa.png",
@@ -14,14 +10,21 @@
     "static/media/add.png": "/react-cv/static/media/add.57f65b59a3d32e4547cd.png",
     "static/media/gamePage.png": "/react-cv/static/media/gamePage.4df4314a825e3dda79b8.png",
     "static/media/delete.png": "/react-cv/static/media/delete.6abcf5067b21e3b534a9.png",
-    "static/media/html.svg": "/react-cv/static/media/html.453d0ac53363bee305a76eec83b9dfee.svg",
+    "static/media/react.svg": "/react-cv/static/media/react.f57b349b4d9df56c9b48c916a8d5adfb.svg",
+    "static/media/next.svg": "/react-cv/static/media/next.2dd758b77e08c8f82ec4931f361f1acd.svg",
+    "static/media/scss.svg": "/react-cv/static/media/scss.63acf9ae50c24df3311ca30ab226812c.svg",
+    "static/media/html.svg": "/react-cv/static/media/html.b96874490c667b3c2448cd15d15d4f90.svg",
+    "static/media/material.svg": "/react-cv/static/media/material.cea2d28aaf4ab748eadd4b0ede228e77.svg",
+    "static/media/typescript.svg": "/react-cv/static/media/typescript.da47f77824fab48dafd99485194e6bae.svg",
+    "static/media/tailwind.svg": "/react-cv/static/media/tailwind.b9fa503e72ceb74d540b64ae55482d43.svg",
     "index.html": "/react-cv/index.html",
+    "static/media/js.svg": "/react-cv/static/media/js.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
     "main.2561722a.css.map": "/react-cv/static/css/main.2561722a.css.map",
-    "main.7d726ff2.js.map": "/react-cv/static/js/main.7d726ff2.js.map",
+    "main.fa9d40b2.js.map": "/react-cv/static/js/main.fa9d40b2.js.map",
     "787.11baedba.chunk.js.map": "/react-cv/static/js/787.11baedba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2561722a.css",
-    "static/js/main.7d726ff2.js"
+    "static/js/main.fa9d40b2.js"
   ]
 }
