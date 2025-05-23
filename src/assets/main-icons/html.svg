@@ -1,19 +1,9 @@
-<svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.377441" width="124.041" height="124.041" rx="10" fill="#25202D"/>
-<g filter="url(#filter0_d_49_492)">
-<path d="M29.7312 24.9728L35.677 91.6611L62.358 99.068L89.1127 91.6508L95.0647 24.9728H29.7312ZM82.1261 46.7837H50.8273L51.5749 55.1592H81.3818L79.1371 80.27L62.398 84.9093L62.3604 84.921L45.606 80.2703L44.4603 67.4279H52.6708L53.2531 73.9511L62.3621 76.4106L62.3695 76.4087L71.4918 73.9459L72.4414 63.3383H44.0947L41.8887 38.6047H82.8583L82.1261 46.7837Z" fill="#6563FF"/>
-<path d="M82.1261 46.7837H50.8273L51.5749 55.1592H81.3818L79.1371 80.27L62.398 84.9093L62.3604 84.921L45.606 80.2703L44.4603 67.4279H52.6708L53.2531 73.9511L62.3621 76.4106L62.3695 76.4087L71.4918 73.9459L72.4414 63.3383H44.0947L41.8887 38.6047H82.8583L82.1261 46.7837Z" fill="#D8D8FF"/>
-</g>
-<defs>
-<filter id="filter0_d_49_492" x="19.7312" y="21.9728" width="85.3335" height="94.0952" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="7"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_49_492"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_49_492" result="shape"/>
-</filter>
-</defs>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#5590dd" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="-51.2 -51.2 614.40 614.40" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#5590dd" stroke-width="0.00512">
+<g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(120.32,120.32), scale(0.53)">
+<rect x="-51.2" y="-51.2" width="614.40" height="614.40" rx="0" fill="#ffffff" strokewidth="0"/>
+</g>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b0011b2"> <path display="inline" d="M30.713,0.501L71.717,460.42l184.006,51.078l184.515-51.15L481.287,0.501H30.713z M395.754,109.646 l-2.567,28.596l-1.128,12.681h-0.187H256h-0.197h-79.599l5.155,57.761h74.444H256h115.723h15.201l-1.377,15.146l-13.255,148.506 l-0.849,9.523L256,413.854v0.012l-0.259,0.072l-115.547-32.078l-7.903-88.566h26.098h30.526l4.016,44.986l62.82,16.965l0.052-0.014 v-0.006l62.916-16.977l6.542-73.158H256h-0.197H129.771l-13.863-155.444l-1.351-15.131h141.247H256h141.104L395.754,109.646z"> </path> </g> </g>
+</svg>

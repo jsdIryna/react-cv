@@ -74,7 +74,7 @@ function Footer() {
         </div>
         <hr className="horizontal__line" />
         <div className="copyright">
-          © Copyright 2024 Iryna Klonova Inc. All rights reserved.
+          © Copyright 2025 Iryna Klonova Inc. All rights reserved.
         </div>
       </div>
     </footer>

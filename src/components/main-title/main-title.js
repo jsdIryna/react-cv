@@ -17,10 +17,11 @@ function MainTitle() {
             <div className="details">
               <div className="details__name">Iryna Klonova</div>
               <div className="details__text">
-                I'm an ambitious front-end developer striving to craft stunning
-                web experiences. I specialize in creating responsive and
-                pixel-perfect websites, driven by my enthusiasm and dedication
-                to every project
+                I'm a front-end developer specializing in building responsive,
+                pixel-perfect websites using React.js, Next.js, TypeScript, and
+                Tailwind CSS. I focus on creating intuitive and performant web
+                experiences, combining a strong eye for design with a solid
+                technical background.
               </div>
               <div className="details__buttons">
                 <Link to="/projects" className="projectsButton">
